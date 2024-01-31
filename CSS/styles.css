@@ -1,0 +1,228 @@
+/* universal css -- to be applied to all components  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* font face  */
+@font-face {
+  font-family: Test_Fonts1;
+  src: url("/Module_Test1_Part2/Fonts/WorkSans-Regular.woff");
+}
+
+@font-face {
+  font-family: Test_Fonts2;
+  src: url("/Module_Test1_Part2/Fonts/SharpGrotesk-Medium.woff");
+}
+
+@font-face {
+  font-family: Test_Fonts3;
+  src: url("/Module_Test1_Part2/Fonts/WorkSans-Medium.woff");
+}
+
+@font-face {
+  font-family: Test_Fonts4;
+  src: url("/Module_Test1_Part2/Fonts/WorkSans-SemiBold.woff");
+}
+
+
+/* default css for all h3 and h1 tags  */
+
+h1,
+h3 {
+  font-family: Test_Fonts2;
+  font-weight: 100;
+}
+
+
+/* default css for all p tags  */
+p {
+  font-family: Test_Fonts1;
+}
+
+/* default css for all h2 and h4 tags  */
+h2,
+h4 {
+  font-family: Test_Fonts1;
+}
+
+/* css for universal container class */
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media screen and (max-width:767px) {
+    padding: 0 25px;
+  }
+}
+
+/* css for main  */
+main {
+  background-color: #FFF7F1;
+  padding: 60px 0 200px 0;
+}
+
+/* css for h3 tag inside header  */
+header h3 {
+  font-size: 25px;
+
+}
+
+/* css for img having class logo  */
+.logo img {
+  width: 280px;
+}
+
+/* css for h1 tag in home page class  */
+.home_page h1 {
+  width: 860px;
+  font-size: 72px;
+  padding-top: 30px;
+}
+
+/* css for immediate container class inside home page class */
+.home_page>.container {
+  position: relative;
+}
+
+/* css for div having big_img class */
+
+.big_img {
+  position: absolute;
+  right: 0px;
+  top: -75px;
+}
+
+/* css for div having small_img class */
+.small_img {
+  position: absolute;
+  top: 260px;
+  right: 450px;
+}
+
+/* css for div with class sign up  */
+.sign_up {
+  padding-top: 80px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* css for p tag inside sign up class */
+.sign_up p {
+  font-size: 18px;
+}
+/* css for input field inside sign up class  */
+
+.sign_up input {
+  height: 40px;
+  padding-left: 17px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+/* css for button inside sign up class */
+.sign_up button {
+  width: 100px;
+  height: 38px;
+  background-color: #FFD560;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+
+/* css for footer  */
+footer {
+  background-color: #000000;
+  background-blend-mode: multiply;
+  /* height: 500px; */
+  padding: 80px 0 40px 0;
+
+}
+
+/* css for footer_inner class */
+.footer_inner {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+/* css for immediate container class inside footer  */
+footer>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 200px;
+  position: relative;
+}
+
+/* css for h2 tag inside footer  */
+footer h2 {
+  font-size: 40px;
+}
+
+/* css for h4 tag inside footer  */
+footer h4 {
+  font-size: 25px;
+}
+
+/* css for cards */
+.cards {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* z-index: 1; */
+}
+
+/* css for icons ---insta, twitter,linkedin, mail  */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* css for links inside cards  */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* css for anchor tag inside links  */
+.links a {
+  text-decoration: none;
+  color: #D2D2D2;
+  font-family: Test_Fonts1;
+}
+
+/* css for credits class */
+.credits {
+  color: #979797;
+  display: flex;
+  justify-content: space-between;
+}
+/* css for anchor tag inside credits  */
+.credits a {
+  font-family: Test_Fonts1;
+  text-decoration: none;
+  color: #979797;
+}
+/* css for policy class  */
+.policy {
+  display: flex;
+  gap: 20px;
+}
+
+/* css for watermark class */
+.watermark {
+  position: absolute;
+  height: 400px;
+  fill: #ffffff;
+  opacity: 0.05;
+  transform: translateX(-70px);
+  z-index: 0;
+}
